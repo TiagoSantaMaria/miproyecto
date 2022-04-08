@@ -119,6 +119,7 @@ body{
     text-align: center;
     margin-top: 60px;
     opacity: 0.4;
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(65, 65, 65),rgb(0, 0, 0),rgb(0, 0, 0),rgb(65, 65, 65),rgb(0, 0, 0));
 }
 .footer__principal--izquierda{
     grid-column: 2/5;

@@ -9,186 +9,197 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- Pagina para Logos -->
     <script src="https://kit.fontawesome.com/725b6c240f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <title>Session - Carta</title>
 </head>
 
 <body>
     <header>
-        <nav class="header__barranav">
-            <a href="#"><img src="../attaches\images\Logos\logo2.png" alt="Logo del Restaurante" class="header__barranav--logo"></a>
-            <ul class="header__barranav--menu">      
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="#">Carta</a>
-                </li>
-                <li>
-                    <a href="equipococina.html">Chefs</a>
-                </li>
-                <li>
-                    <a href="reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div class="header__barranav--redes">
-                <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../attaches/images/Logos/logo2.png" alt="logo" class="img-fluid header__barranav--logo" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/equipococina.html">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__barranav">
+                    <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                </div>
             </div>
         </nav>
     </header>
 
-
-    <main class="main__carta">
-        <div class="main__carta--titulo">
-            <h1>Carta</h1>
-        </div>
-        <div class="main__carta--nave">
-            <ul>
-                <li>
-                    <a href="#pastas">Pastas</a>
-                </li>
-                <li>
-                    <a href="#pizzas">Pizzas</a>
-                </li>
-                <li>
-                    <a href="#hamburguesas">Hamburguesas</a>
-                </li>
-                <li>
-                    <a href="#bebidas">Bebidas</a>
-                </li>
-            </ul>
-        </div>
-        <div class="main__carta--platosMes--titulo">
-            <h2>Platos del Mes</h2>
-        </div>
-        <div class="main__carta--platosMes">
-            <div>
-                <img src="../attaches\images\Comidas\ensalada.jpg" alt="Comida del Mes 1">
-                <p><h3>Ensalada Cesar</h3></p>
-                <p>Ensalada gourmet, receta autentica de nuestros Chefs.</p>
-                <p>$390</p>
+    <main class="main__carta--Fondo">
+        <div class="main__carta">
+            <div class="main__carta--titulo">
+                <h1>Carta</h1>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\hamburguesa.jpg" alt="Comida del Mes 2">
-                <p><h3>Hamburguesa BigCheese</h3></p>
-                <p>Triple medallon de carne y exceso de cheddar.</p>
-                <p>$550</p>
+            <div class="main__carta--nave">
+                <ul>
+                    <li>
+                        <a href="#pastas">Pastas</a>
+                    </li>
+                    <li>
+                        <a href="#pizzas">Pizzas</a>
+                    </li>
+                    <li>
+                        <a href="#hamburguesas">Hamburguesas</a>
+                    </li>
+                    <li>
+                        <a href="#bebidas">Bebidas</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\spagetti.jpg" alt="Comida del Mes 3">
-                <p><h3>Spaggetis</h3></p>
-                <p>Spaggetis con salsa blanca acompañados de verdeo.</p>
-                <p>$450</p>
+            <div class="main__carta--platosMes--titulo">
+                <h2>Platos del Mes</h2>
             </div>
-        </div>
-        <div class="main__carta--pastas--titulo" id="pastas">
-            <h2>Pastas</h2>
-        </div>
-        <div class="main__carta--pastas">
-            <div>                                 
-                <img src="../attaches\images\Comidas\spagetti.jpg" alt="Spaggetis">
-                <p><h3>Spaggetis Verdes</h3></p>
-                <p>Spaggetis al pesto, con salsa de verdeo y romeo</p>
-                <p>$550</p>
+            <div class="main__carta--platosMes">
+                <div>
+                    <img src="../attaches\images\Comidas\ensalada.jpg" alt="Comida del Mes 1">
+                    <p><h3>Ensalada Cesar</h3></p>
+                    <p>Ensalada gourmet, receta autentica de nuestros Chefs.</p>
+                    <p>$390</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\hamburguesa.jpg" alt="Comida del Mes 2">
+                    <p><h3>Burger BigCheese</h3></p>
+                    <p>Triple medallon de carne y exceso de cheddar.</p>
+                    <p>$550</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\spagetti.jpg" alt="Comida del Mes 3">
+                    <p><h3>Spaggetis</h3></p>
+                    <p>Spaggetis con salsa blanca acompañados de verdeo.</p>
+                    <p>$450</p>
+                </div>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\spagettiAlbondigas.jpg" alt="Spaggetis">
-                <p><h3>Spaggetis Estofado </h3></p>
-                <p>Spaggetis compañados con albondigas y salsa roja</p>
-                <p>$550</p>
+            <div class="main__carta--pastas--titulo" id="pastas">
+                <h2>Pastas</h2>
             </div>
-            <div>                    
-                <img src="../attaches\images\Comidas\spagettiVerduras.jpg" alt="Spaggetis">
-                <p><h3>Spaggetis Sessions</h3></p>
-                <p>Spaggetis, acompañados con verduras y carne.</p>
-                <p>$550</p>
+            <div class="main__carta--pastas">
+                <div>                                 
+                    <img src="../attaches\images\Comidas\spagetti.jpg" alt="Spaggetis">
+                    <p><h3>Spaggetis Verdes</h3></p>
+                    <p>Spaggetis al pesto, con salsa de verdeo y romeo</p>
+                    <p>$550</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\spagettiAlbondigas.jpg" alt="Spaggetis">
+                    <p><h3>Spaggetis Estofado </h3></p>
+                    <p>Spaggetis compañados con albondigas y salsa roja</p>
+                    <p>$550</p>
+                </div>
+                <div>                    
+                    <img src="../attaches\images\Comidas\spagettiVerduras.jpg" alt="Spaggetis">
+                    <p><h3>Spaggetis Sessions</h3></p>
+                    <p>Spaggetis, acompañados con verduras y carne.</p>
+                    <p>$550</p>
+                </div>
             </div>
-        </div>
-        <div id="pizzas" class="main__carta--pizzas--titulo">
-            <h2>Pizzas</h2>
-        </div>
-        <div class="main__carta--pizzas">
-            <div>
-                <img src="../attaches\images\Comidas\peperoni.jpg" alt="Pizza">
-                <p><h3>Pepperoni</h3></p>
-                <p>Clasica, de muzzarela con mucho pepperoni.</p>
-                <p>$650</p>
+            <div id="pizzas" class="main__carta--pizzas--titulo">
+                <h2>Pizzas</h2>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\muzarela.jpg" alt="Pizza">
-                <p><h3>Muzzarela</h3></p>
-                <p>Tipica pizza, la mas original, la clasica de muzza.</p>
-                <p>$550</p>
+            <div class="main__carta--pizzas">
+                <div>
+                    <img src="../attaches\images\Comidas\peperoni.jpg" alt="Pizza">
+                    <p><h3>Pepperoni</h3></p>
+                    <p>Clasica, de muzzarela con mucho pepperoni.</p>
+                    <p>$650</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\muzarela.jpg" alt="Pizza">
+                    <p><h3>Muzzarela</h3></p>
+                    <p>Tipica pizza, la mas original, la clasica de muzza.</p>
+                    <p>$550</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\masaMadre.jpg" alt="Pizza">
+                    <p><h3>Masa Madre</h3></p>
+                    <p>Masa madre, animate a probarla, especialidad de la casa. </p>
+                    <p>$600</p>
+                </div>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\masaMadre.jpg" alt="Pizza">
-                <p><h3>Masa Madre</h3></p>
-                <p>Masa madre, animate a probarla, especialidad de la casa. </p>
-                <p>$600</p>
+            <div id="hamburguesas" class="main__carta--hamburguesas--titulo">
+                <h2>Hamburguesas</h2>
             </div>
-        </div>
-        <div id="hamburguesas" class="main__carta--hamburguesas--titulo">
-            <h2>Hamburguesas</h2>
-        </div>
-        <div class="main__carta--hamburguesas">
-            <div>
-                <img src="../attaches\images\Comidas\bigmac.jpg" alt="Hamburguesa">
-                <p><h3>Big Mac</h3></p>
-                <p>La mejor imitacion de la Big Mac la tenes aca.</p>
-                <p>$750</p>
+            <div class="main__carta--hamburguesas">
+                <div>
+                    <img src="../attaches\images\Comidas\bigmac.jpg" alt="Hamburguesa">
+                    <p><h3>Big Mac</h3></p>
+                    <p>La mejor imitacion de la Big Mac la tenes aca.</p>
+                    <p>$750</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\pancasero.jpg" alt="Hamburguesa">
+                    <p><h3>Home-Made Bread </h3></p>
+                    <p>Hamburguesa, pero con un pan casero de la casa.</p>
+                    <p>$650</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\hamburguesa.jpg" alt="Hamburguesa">
+                    <p><h3>La Angostura</h3></p>
+                    <p>Triple medallon de carne y exceso de cheddar</p>
+                    <p>$750</p>
+                </div>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\pancasero.jpg" alt="Hamburguesa">
-                <p><h3>Home-Made Bread </h3></p>
-                <p>Hamburguesa, pero con un pan casero de la casa.</p>
-                <p>$650</p>
+            <div id="bebidas" class="main__carta--bebidas--titulo">
+                <h2>Bebidas</h2>
             </div>
-            <div>
-                <img src="../attaches\images\Comidas\hamburguesa.jpg" alt="Hamburguesa">
-                <p><h3>La Angostura</h3></p>
-                <p>Triple medallon de carne y exceso de cheddar</p>
-                <p>$750</p>
-            </div>
-        </div>
-        <div id="bebidas" class="main__carta--bebidas--titulo">
-            <h2>Bebidas</h2>
-        </div>
-        <div class="main__carta--bebidas">
-            <div>
-                <img src="../attaches\images\Comidas\lineaCoca.jpg" alt="Bebida">
-                <p><h3>Bebidas sin Alcohol</h3></p>
-                <p>Toda la linea coca, botellas de 350 cc</p>
-                <br>
-                <p>$180</p>
-            </div>
-            <div>
-                <img src="../attaches\images\Comidas\tragos.jpg" alt="Bebida">
-                <p><h3>Bebidas con Alcohol</h3></p>
-                <p>Aperitivos, copones de 300 cc</p>
-                <br>
-                <p>$280</p>
-            </div>
-            <div>
-                <img src="../attaches\images\Comidas\beer.jpg" alt="Bebida">
-                <p><h3>Cerveza</h3></p>
-                <p>Cerveza tirada, vaso de 450 cc</p>
-                <br>
-                <p>$250</p>
+            <div class="main__carta--bebidas">
+                <div>
+                    <img src="../attaches\images\Comidas\lineaCoca.jpg" alt="Bebida">
+                    <p><h3>Bebidas s/Alcohol</h3></p>
+                    <p>Toda linea coca, botellas de 350 cc</p>
+                    <p>$180</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\tragos.jpg" alt="Bebida">
+                    <p><h3>Bebidas c/Alcohol</h3></p>
+                    <p>Aperitivos, copones de 300 cc</p>
+                    <p>$280</p>
+                </div>
+                <div>
+                    <img src="../attaches\images\Comidas\beer.jpg" alt="Bebida">
+                    <p><h3>Cerveza Tirada</h3></p>
+                    <p>Cerveza tirada, vaso de 450 cc</p>
+                    <p>$250</p>
+                </div>
             </div>
         </div>
     </main>
+
+    
     <footer class="footer__principal">
         <div class="footer__principal--izquierda">
-            <p>Abierto de Lunes a Jueves: 11hs a 14hs y 19hs a 23hs</p>
+            <p>Lunes a Jueves: 11hs a 14hs - 19hs a 23hs</p>
             <p>Viernes a Domingos: 17hs a 01hs</p>
         </div>
         <div class="footer__principal--derecha">
             <p>Direccion: Alvear 752</p>
-            <p>Telefono:12312312321</p>
+            <p>Telefono:122312312321</p>
         </div>
     </footer>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
+</html>

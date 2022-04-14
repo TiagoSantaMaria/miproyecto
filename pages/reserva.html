@@ -9,181 +9,182 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- Pagina para Logos -->
     <script src="https://kit.fontawesome.com/725b6c240f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <title>Session - Reserva</title>
 </head>
 <body>
     <header>
-        <nav class="header__barranav">
-            <a href="#"><img src="../attaches\images\Logos\logo2.png" alt="Logo del Restaurante" class="header__barranav--logo"></a>
-            <ul class="header__barranav--menu">      
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="carta.html">Carta</a>
-                </li>
-                <li>
-                    <a href="equipococina.html">Chefs</a>
-                </li>
-                <li>
-                    <a href="#">Reserva</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div class="header__barranav--redes">
-                <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../attaches/images/Logos/logo2.png" alt="logo" class="img-fluid header__barranav--logo" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/equipococina.html">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__barranav">
+                    <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                </div>
             </div>
         </nav>
     </header>
-
-
-    <main class="main__reserva">
+    <main class="main__reserva ">
         <div class="main__reserva--titulo">
             <h1>Reserva</h1>
         </div>
-        <div class="main__reserva--formulario">
-            <form action="procesamiento.php" method="post" class="main__reserva--formularioAcomodo">
-                <div class="main__reserva--formularioAcomodo--displayFlex1">
-                    <div class="main__reserva--formularioAcomodo--nombre"> 
-                        <p>Seleccionar Dia</p>
-                    </div>
-                    <div class="correr">
-                        <select name="mes" id="" >
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>                               
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>                                
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
-                    </div>
+        <div class="">
+            <form action="procesamiento.php" method="post" class="container">
+                <div class="main__reserva--formularioAcomodo"> 
+                    <p>Seleccionar Dia</p>
                 </div>
-
-                <div class="main__reserva--formularioAcomodo--displayFlex2">
-                    <div class="main__reserva--formulario--nombre">
-                        <p>Seleccionar Mes</p>
-                    </div>
-                    <div>                
-                        <select name="mes" id="">
-                            <option value="enero">Enero</option>
-                            <option value="febrero">Febrero</option>
-                            <option value="marzo">Marzo</option>
-                            <option value="abril">Abril</option>
-                            <option value="mayo">Mayo</option>
-                            <option value="junio">Junio</option>
-                            <option value="julio">Julio</option>
-                            <option value="agosto">Agosto</option>                                
-                            <option value="septiembre">Septiembre</option>
-                            <option value="octubre">Octubre</option>
-                            <option value="noviembre">Noviembre</option>
-                            <option value="diciembre">Diciembre</option>
-                        </select>
-                    </div>    
-                </div> 
-
-                <div class="main__reserva--formularioAcomodo--displayFlex3">
-                    <div class="main__reserva--formulario--nombre">
-                        <p>Seleccionar Horario</p>
-                    </div>
-                    <div>
-                        <select name="hora" id="">
-                            <option value="00">00hs</option>
-                            <option value="00.30">00.30hs</option>
-                            <option value="11">11hs</option>
-                            <option value="11.30">11.30hs</option>
-                            <option value="12">12hs</option>
-                            <option value="12.30">12.30hs</option>
-                            <option value="13">13hs</option>
-                            <option value="13.30">13.30hs</option>
-                            <option value="14">14hs</option>
-                            <option value="19">19hs</option>
-                            <option value="19.30">19.30hs</option>
-                            <option value="20">20hs</option>
-                            <option value="20.30">20.30hs</option>
-                            <option value="21">21hs</option>
-                            <option value="21.30">21.30hs</option>
-                            <option value="22">22hs</option>
-                            <option value="22.30">22.30hs</option>
-                            <option value="23">23hs</option>
-                            <option value="23.30">23.30hs</option>
-                        </select>
-                    </div>
+                <div class="">
+                    <select name="mes" id="" class="form-select">
+                        <option selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>                               
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>                                
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
                 </div>
-
-                <div class="main__reserva--formularioAcomodo--displayFlex4">
-                    <div class="main__reserva--formulario--nombre">
-                        <p>Seleccionar Tamaño del Grupo</p>
-                    </div>
-                    <div>
-                        <select name="tam" id="">
-                            <option value="01">1</option>
-                            <option value="02">2</option>
-                            <option value="03">3</option>
-                            <option value="04">4</option>
-                            <option value="05">5</option>
-                            <option value="06">6</option>
-                            <option value="07">7</option>
-                            <option value="08">8</option>
-                            <option value="09">9</option>
-                            <option value="010">10</option>
-                            <option value="011">11</option>
-                            <option value="012">12</option>
-                        </select>    
-                    </div>
+                <div class="main__reserva--formularioAcomodo">
+                    <p>Seleccionar Mes</p>
                 </div>
-                <div class="main__reserva--formularioAcomodo--displayFlex5">
-                        <label for="nombre">Nombre y Apellido:</label>
-                        <input type="text" name="nombre" placeholder="Ingresar nombre y apellido">
+                <div>                
+                    <select name="mes" id="" class="form-select">
+                        <option selected></option>
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>                                
+                        <option value="septiembre">Septiembre</option>                            
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                    </select>
+                </div>    
+                <div class="main__reserva--formularioAcomodo">
+                    <p>Seleccionar Horario</p>
                 </div>
-                <div class = "main__reserva--formularioAcomodo--displayFlex6">
-                    <label for="telefono">Numero de Telefono</label>
-                    <input type="tel" name="telefono" placeholder="Ingresar numero de telefono">
+                <div>
+                    <select name="hora" id="" class="form-select">
+                        <option selected></option>
+                        <option value="00">00hs</option>
+                        <option value="00.30">00.30hs</option>
+                        <option value="11">11hs</option>
+                        <option value="11.30">11.30hs</option>
+                        <option value="12">12hs</option>
+                        <option value="12.30">12.30hs</option>
+                        <option value="13">13hs</option>
+                        <option value="13.30">13.30hs</option>
+                        <option value="14">14hs</option>
+                        <option value="19">19hs</option>
+                        <option value="19.30">19.30hs</option>
+                        <option value="20">20hs</option>
+                        <option value="20.30">20.30hs</option>
+                        <option value="21">21hs</option>
+                        <option value="21.30">21.30hs</option>
+                        <option value="22">22hs</option>
+                        <option value="22.30">22.30hs</option>
+                        <option value="23">23hs</option>
+                        <option value="23.30">23.30hs</option>
+                    </select>
                 </div>
-                <div class="main__reserva--formularioAcomodo--displayFlex7">
-                    <input type="submit" value="Enviar">
+                <div class="main__reserva--formularioAcomodo">
+                    <p>Seleccionar Tamaño del Grupo</p>
+                </div>
+                <div>
+                    <select name="tam" id="" class="form-select">
+                        <option selected></option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="010">10</option>
+                        <option value="011">11</option>
+                        <option value="012">12</option>
+                    </select>    
+                </div>
+                <div class="main__reserva--formularioAcomodo">
+                        <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                        <input type="text" name="nombre" placeholder="Ingresar nombre y apellido" class="form-control">
+                </div>
+                <div class="main__reserva--formularioAcomodo">
+                    <label for="telefono" class="form-label">Numero de Telefono</label>
+                    <input type="tel" name="telefono" placeholder="Ingresar numero de telefono" class="form-control">
+                </div>
+                <div class="main__reserva--formularioAcomodo">
+                    <button type="button" value="Enviar" class="btn btn-outline-dark">Enviar</button>
                 </div> 
             </form>
         </div>
     </main>
 
-
     <footer class="footer__principal">
         <div class="footer__principal--izquierda">
-            <p>Abierto de Lunes a Jueves: 11hs a 14hs y 19hs a 23hs</p>
+            <p>Lunes a Jueves: 11hs a 14hs - 19hs a 23hs</p>
             <p>Viernes a Domingos: 17hs a 01hs</p>
         </div>
         <div class="footer__principal--derecha">
             <p>Direccion: Alvear 752</p>
-            <p>Telefono:12312312321</p>
+            <p>Telefono:122312312321</p>
         </div>
     </footer>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
+</html>

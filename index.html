@@ -9,33 +9,48 @@
     <link rel="stylesheet" href="css/estilos.css">
     <!-- Pagina para Logos -->
     <script src="https://kit.fontawesome.com/725b6c240f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <title>Session - Inicio</title>
 </head>
+
 <body>
     <header>
-        <nav class="header__barranav">
-            <a href="#"><img src="attaches\images\Logos\logo2.png" alt="Logo del Restaurante" class="header__barranav--logo"></a>
-            <ul class="header__barranav--menu">      
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/carta.html">Carta</a>
-                </li>
-                <li>
-                    <a href="pages/equipococina.html">Chefs</a>
-                </li>
-                <li>
-                    <a href="pages/reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <div class="header__barranav--redes">
-                <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="attaches/images/Logos/logo2.png" alt="logo" class="img-fluid header__barranav--logo" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/equipococina.html">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="header__barranavMov">
+                        <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                    </div>
+                </div>
+                <div class="header__barranav">
+                    <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                </div>
             </div>
         </nav>
     </header>
@@ -46,21 +61,20 @@
             <img src="attaches\images\Comidas\comida3.jpg" alt="Hamburguesa" class="main__home--fotos--3" >      
         </div>
         <div class="main__home--descripcion">
-            <p>¿QUIENES SOMOS?</p>    
-            <p>Somos un Restaurante Bar "Session", en la ciudad de Pergamino, que ofrece a sus clientes, una exquisita gastronomía internacional, y nacional, con platos innovadores, decorados con creatividad y buen gusto,  sus bebidas marcan la diferencia por el diseño de sus copas, sus decoración y sus mezclas, se cuenta con zona de entretenimiento, donde adultos y niños, logran divertirse y pasar un rato agradable, antes de continuar con sus labores cotidianas. Los fines de semana, Session, ofrece a sus clientes: viernes de karaoke, rumba con artistas en vivo, y  sábados de cine foro.</p>
+            <h5>¿QUIENES SOMOS?</h5>    
+            <h6>Somos un Restaurante Bar "Session", en la ciudad de Pergamino, que ofrece a sus clientes, una exquisita gastronomía internacional, y nacional, con platos innovadores, decorados con creatividad y buen gusto,  sus bebidas marcan la diferencia por el diseño de sus copas, sus decoración y sus mezclas, se cuenta con zona de entretenimiento, donde adultos y niños, logran divertirse y pasar un rato agradable, antes de continuar con sus labores cotidianas. Los fines de semana, Session, ofrece a sus clientes: viernes de karaoke, rumba con artistas en vivo, y  sábados de cine foro.</h6>
         </div>
     </main>
     <footer class="footer__principal">
         <div class="footer__principal--izquierda">
-            <p>Abierto de Lunes a Jueves: 11hs a 14hs y 19hs a 23hs</p>
+            <p>Lunes a Jueves: 11hs a 14hs - 19hs a 23hs</p>
             <p>Viernes a Domingos: 17hs a 01hs</p>
         </div>
         <div class="footer__principal--derecha">
             <p>Direccion: Alvear 752</p>
-            <p>Telefono:12312312321</p>
+            <p>Telefono:122312312321</p>
         </div>
     </footer>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-

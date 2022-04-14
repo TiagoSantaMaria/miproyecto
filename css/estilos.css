@@ -10,70 +10,56 @@ body{
 }
 
 /* Header */
-
-.header__barranav{
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    align-items: center;
-}
-
 .header__barranav--logo{
-    margin-top: 5px;
-    grid-column: 1/2;
-    width: 250px;
-    height: 78px;
-    background-color: white;
-    border: solid 4px black;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
 }
-
-.header__barranav--menu{
-    grid-column: 2/7;
+.navbar{
+    border-bottom: solid rgb(131, 131, 131);
+}
+.container-fluid .header__barranav{
+    height: 80px;
+    background-color: white;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    background-color: white;
-    height: 78px;
-    border: solid 4px black;
+    font-size: 25px;
+    width: 100px;
+    display: active;
 }
-.header__barranav--menu li {
-    padding: 7px;
-    font-size: 15px;
-}
-.header__barranav--menu a{
-    padding: 20px 45px;
-    display: inline-block;
-    color: rgb(0, 0, 0);
-}
-.header__barranav--menu a:hover {
+.nav-item a:hover {
     background-color: rgb(206, 197, 197);
     color: rgb(0, 0, 0);
 }
-
-.header__barranav--redes{
-    height: 78px;
-    border: solid 4px black;
-    background-color: white;
-    grid-column: 7/7;
+.container-fluid .navbar-nav .nav-item a{
+    color: rgb(0, 0, 0);
+    padding: 15px 35px;
+}
+.header__barranavMov{
+    font-size: 25px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 30px;
+    display: none;
 }
+/* ------------------------------ */
 
-/* Pagina Main */
+/* Pagina Index */
 .main__home{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 1fr max-content;
+    background-color: rgb(0, 0, 0);
 }
 .main__home--fotos{
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction:row;
     grid-column: 1/7;
     grid-row: 1/2;
     justify-content: space-around;
 }
-
 .main__home--fotos--1{
     width: 32.5vw;
     height: 85vh;
@@ -88,69 +74,77 @@ body{
     height: 85vh;
 }
 
-/*
-.main__home--fotos--1{
-    width: 510px;
-}
-.main__home--fotos--2{
-    width: 410px;
-}
-.main__home--fotos--3{
-    width: 410px;
-}
-*/
 .main__home--descripcion{
     grid-column: 2/6;
     grid-row: 2/2;
-    color: white;
+    color: rgb(177, 177, 177);
     text-align: center;
     margin-top: 20px;
-    border: groove gray;
+    margin-bottom: 100px;
     max-height: max-content;
+    background-color: black;
 }
+/* --------------------- */
 
 /* Footer */
 .footer__principal{
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    color: white;
+    color: rgb(177, 177, 177);
     font-size: 1.5vh;
     justify-content: center;
     text-align: center;
-    margin-top: 60px;
-    opacity: 0.4;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(65, 65, 65),rgb(0, 0, 0),rgb(0, 0, 0),rgb(65, 65, 65),rgb(0, 0, 0));
+    height: 50px;
 }
 .footer__principal--izquierda{
     grid-column: 2/5;
-    border: solid 3px;
+    border: solid 2px;
     border-radius: 20px;
-    width: 220px;
+    width: 200px;
+    height: 40px;
+    line-height: 9px;
+
 }
 .footer__principal--derecha{
     grid-column: 8/10;
-    border: solid 3px;
+    border: solid 2px;
     border-radius: 20px;
-    width: 220px;
+    width: 200px;
+    height: 40px;
+    line-height: 9px;
 }
 
+
 /* Pagina Equipo de Cocina */
+.main__eqiopoCocina--Fondo{
+    min-height: 100vh;
+    background: url('../attaches/images/FondoReserva/FondoChefs.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
 
 .main__equipoCocina{
-    background-color: white;
     display: grid;
     grid-template-rows: max-content 1fr;
     margin-left: 10%;
     margin-right: 10%;
     justify-items: center;
 }
+
 .main__equipoCocina--titulo{
     text-align: center;
-    border: solid 2px black;
     margin-top: 10px;
     width: 40%;
     color: rgb(0, 0, 0);
+    background-color: wheat;
+}
+.main__equipoCocina--titulo h1{
+    font-size: 30px;
+    font-weight: normal;
 }
 .main__equipoCocina--conjuntoimagenes{
+    margin-top: 30px;
     grid-row: 2/3;
     display: flex;
     flex-direction: row;
@@ -162,11 +156,12 @@ body{
     color: rgb(0, 0, 0);
     border: solid 2px;
     width: 300px;
-    /* Aqui siempre prondia la misma cantidad de texto asi se ve simetrico */
-    height: min-content;
+    /* Aqui siempre pondira la misma cantidad de texto asi se ve simetrico */
+    height: 87.5vh;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
+    background-color: wheat;
 }
 .main__equipoCocina--imagenes img{
     width: 35vh;
@@ -176,179 +171,85 @@ body{
 }
 
 /* Main Contacto */
-
 .main__contacto{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: white;
-    justify-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: max-content 1fr;
+    min-height: 100vh;
+    background: url('../attaches/images/FondoReserva/FondoContacto.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .main__contacto--titulo{
-    margin-top: 10px;
-    border: solid 2px black;
-    width: 250px;
     text-align: center;
 }
-.main__contacto--formulario{
+.main__contacto--titulo h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.main__contacto--formularioAcomodo input{
     margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid 2px;
-    width: 45vw;
-    padding: 20px;
-    font-weight: bolder;
 }
-
-.main__contacto--formulario label{
-    font-size: 15px;
-    display: block;
+.main__contacto--formularioAcomodo{
+    margin-top: 15px;
 }
-
 .main__contacto--formulario input, textarea{
     margin-bottom: 20px;
     width: 100%;
     padding: 5px;
 }
-
-.main__contacto--formulario input:focus, textarea:focus{
+.main__contacto--formularioAcomodo input:focus, textarea:focus{
     border: solid 4px rgb(0, 0, 0);
 }
-
-.main__contacto--formulario textarea{
+.main__contacto--formularioAcomodo textarea{
     resize: vertical;
     max-height: 250px;
     min-height: 100px;
+    margin-top: 10px;
 }
-
-.main__contacto--formulario input[type="submit"], input[type="reset"] {
-    margin-bottom: 10px;
-    border: solid 1px;
-    background-color: rgb(255, 255, 255);
+.main__contacto--formularioAcomodo--Botones input{
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 50px;
 }
-
-.main__contacto--formulario input[type="submit"]:hover, input[type="reset"]:hover {
+.main__contacto--formularioAcomodo--Botones input:hover{
     background-color: aqua;
     cursor: pointer;
 }
+/* }--------------------------------------- */
 
 /* Pagina Reserva */
+
 .main__reserva{
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: max-content 1fr;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    min-height: 100vh;
+    background: url('../attaches/images/FondoReserva/pexels-photo-941861.jpeg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .main__reserva--titulo{
-    grid-column: 6/8;
-    grid-row: 1/2;
-    border: solid;
-    width: 150px;
     text-align: center;
-    margin-top: 10px;
 }
-.main__reserva--formulario{
-    grid-column: 4/10;
-    grid-row: 2/2;
-    border: solid;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.main__reserva--titulo h1{
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
 }
+
 .main__reserva--formularioAcomodo{
-    display: grid;
-    /*grid-template-columns: repeat(8,1fr);*/
-    grid-template-rows: repeat(7, min-height);
-}
-.main__reserva--formularioAcomodo--displayFlex1{
-    border: solid;
-    height:max-content;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    grid-row: 1/2;
-}
-.main__reserva--formularioAcomodo--displayFlex2{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    grid-row: 2/3;
-}
-.main__reserva--formularioAcomodo--displayFlex3{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    grid-row: 3/4;
-}
+    margin-top: 15px;
 
-.main__reserva--formularioAcomodo--displayFlex4{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    grid-row: 4/5;
 }
-.main__reserva--formularioAcomodo--displayFlex5{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    grid-row: 5/6;
+.main__reserva--formularioAcomodo p, label{
+    color: white;
 }
-.main__reserva--formularioAcomodo--displayFlex5 label{
-    font-size: 15px;
-    display: block;
-    justify-content: flex-start;
+.main__reserva--formularioAcomodo .btn{
+    background-color: white;
+    margin-bottom: 20px;
 }
-.main__reserva--formularioAcomodo--displayFlex5 input{
-    margin-bottom: 5px;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box; /*para amoldar al cuadro*/
-}
-
-.main__reserva--formularioAcomodo--displayFlex6{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    grid-row: 6/7;
-}
-.main__reserva--formularioAcomodo--displayFlex6 label{
-    font-size: 15px;
-    display: block;
-    justify-content: flex-start;
-}
-.main__reserva--formularioAcomodo--displayFlex6 input{
-    margin-bottom: 5px;
-    width: 100%;
-    padding: 5px;
-    box-sizing: border-box; /*para amoldar al cuadro*/
-}
-
-.main__reserva--formularioAcomodo--displayFlex7{
-    border: solid;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    grid-row: 7/8;
-    height: 50px;
-}
-.main__reserva--formularioAcomodo--displayFlex7 input{
-    box-sizing: border-box;
-    width: 100%;
-}
-.main__reserva--formularioAcomodo--displayFlex7 input[type="submit"]:hover{
-    background-color: aqua;
-    cursor: pointer;
-}
+/* --------------------------------------------- */
 
 /* Pagina Carta */
+.main__carta--Fondo{
+    min-height: 100vh;
+    background: url('../attaches/images/FondoReserva/fondoCarta.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
 .main__carta{
     display: grid;
     grid-template-rows: repeat(18, min-height);
@@ -356,7 +257,6 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: white;
     text-align: center;
 }
 
@@ -364,35 +264,43 @@ body{
     grid-row: 1/2;
     grid-column: 2/3;
     margin-top: 10px;
-    border: solid;
     width: 55%;
-    margin-left: 30%;
+    margin-left: 20%;
+    background-color: wheat;
 }
+.main__carta--titulo h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+
 
 .main__carta--nave{
     grid-row: 2/3;
     grid-column: 1/4;
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 10%;
-    width: 80%;
-    border: solid 4px;
+    margin-top: 20px;
+    align-items: center;
+    height: 50px;
+    border: solid gray 0.5px;
+    background-color: wheat;
 }
 .main__carta--nave ul{
-    height: 50px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    width: 77vw;
+    margin-top: 12px;
+
 }
 .main__carta--nave a {
     padding:  10px 25px;
     color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
 }
 .main__carta--nave a:hover {
     background-color: rgb(168, 168, 168);
     color: rgb(0, 0, 0);
 }
-
 
 .main__carta--platosMes--titulo{
     color: rgb(0, 0, 0);
@@ -407,15 +315,15 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-top: 10px;
 }
 .main__carta--platosMes div{
     border: solid;
-    height: 430px;
+    height: 500px;
     width: 250px;
     margin-top: 10px;
-
+    background-color: wheat;
 }
 .main__carta--platosMes img{
     margin-top: 5px;
@@ -423,6 +331,8 @@ body{
     height: 330px;
     border: solid gray;
 }
+
+
 .main__carta--pastas--titulo{
     color: rgb(0, 0, 0);
     grid-row: 5/6;
@@ -435,12 +345,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-top: 10px;
 }
 .main__carta--pastas div{
+    background-color: wheat;
     border: solid;
-    height: 430px;
+    height: 500px;
     width: 250px;
     margin-top: 10px;
 
@@ -465,12 +376,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-top: 10px;
 }
 .main__carta--pizzas div{
+    background-color: wheat;
     border: solid;
-    height: 430px;
+    height: 500px;
     width: 250px;
     margin-top: 10px;
 
@@ -495,15 +407,15 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-top: 10px;
 }
 .main__carta--hamburguesas div{
+    background-color: wheat;
     border: solid;
-    height: 430px;
+    height: 500px;
     width: 250px;
     margin-top: 10px;
-
 }
 .main__carta--hamburguesas img{
     margin-top: 5px;
@@ -511,7 +423,6 @@ body{
     height: 330px;
     border: solid gray;
 }
-
 
 
 .main__carta--bebidas--titulo{
@@ -526,12 +437,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     margin-top: 10px;
 }
 .main__carta--bebidas div{
+    background-color: wheat;
     border: solid;
-    height: 430px;
+    height: 500px;
     width: 250px;
     margin-top: 10px;
 
@@ -542,17 +454,6 @@ body{
     height: 330px;
     border: solid gray;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* MEDIA QUERIES */
@@ -581,6 +482,12 @@ body{
     .header__barranav--menu li {
         padding: 7px;
         font-size: 13.5px;
+    }
+    .container-fluid .header__barranav{
+       display:none;
+    }
+    .header__barranavMov{
+        display: flex;
     }
     /* ------------------------ */
 }
@@ -653,10 +560,6 @@ body{
     }
     /* ------------ */
     /* main Carta */
-    .main__carta--nave{
-        margin-left: 5%;
-        width: 90%;
-    }
     .main__carta--nave a {
         padding:  10px 5px;
     }
@@ -715,7 +618,6 @@ body{
     /* main Contacto */
     .main__contacto--titulo{
     font-size: 13px;
-    width: 160px;
     }
     /* -------------- */
 }
@@ -783,6 +685,17 @@ body{
         font-size: small;
         padding: 10px 3px;
     }
+        /* Main Index */
+        .main__home--fotos--1{
+            display: none;
+        }
+        .main__home--fotos--2{
+            display: none;
+        }
+        .main__home--fotos--3{
+            width: 95vw;
+            height: 90vh;
+        }
 }
 @media screen and (max-width: 400px){
     /* Header */
@@ -843,8 +756,8 @@ body{
     /* ----------- */
      /* footer */
     .footer__principal{
-        font-size: 8px;
-        
+        font-size: 10px;
+        height: 100px;
     }
     .footer__principal--izquierda{
         grid-column: 4/8;
@@ -862,7 +775,7 @@ body{
     /* main Contacto */
     .main__contacto--titulo{
         font-size: 10px;
-        width: 150px;
+
     }
     .main__contacto--formulario{
         font-size: 15px;
@@ -876,7 +789,6 @@ body{
     /* Main Reserva */
     .main__reserva--titulo{
         font-size: 13px;
-        width: 35vw;
     }
     .main__reserva--formulario{
         grid-column: 4/10;

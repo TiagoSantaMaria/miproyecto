@@ -9,75 +9,86 @@
     <link rel="stylesheet" href="../css/estilos.css">
     <!-- Pagina para Logos -->
     <script src="https://kit.fontawesome.com/725b6c240f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <title>Session - Contacto</title>
 </head>
 <body>
     <header>
-        <nav class="header__barranav">
-            <a href="#"><img src="../attaches\images\Logos\logo2.png" alt="Logo del Restaurante" class="header__barranav--logo"></a>
-            <ul class="header__barranav--menu">      
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/carta.html">Carta</a>
-                </li>
-                <li>
-                    <a href="../pages/equipococina.html">Chefs</a>
-                </li>
-                <li>
-                    <a href="../pages/reserva.html">Reserva</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-            <div class="header__barranav--redes">
-                <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../attaches/images/Logos/logo2.png" alt="logo" class="img-fluid header__barranav--logo" ></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/carta.html">Carta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/equipococina.html">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__barranav">
+                    <a href="https://www.facebook.com/SessionHausPergamino" target="_blank" ><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/sessionhaus/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com.ar/maps/search/session+pergamino/@-33.8951605,-60.5739027,17z/data=!3m1!4b1" target="_blank" ><i class="fa-solid fa-location-dot"></i></a>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="main__contacto">
+    <main class="main__contacto ">
         <div class="main__contacto--titulo">
             <h1>Contactanos</h1>
         </div>
-        <form action="procesar.php" method="post" class="main__contacto--formulario">
+
+        <form action="procesar.php" method="post" class="main__contacto--formularioAcomodo container">
             <div>
-                <label for="nombre" class="main__contacto--label">Nombre y Apellido</label>
-                <input type="text" name="nombre" placeholder="Ingresar nombre y apellido">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Ingresar nombre y apellido" class="form-control">
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Ingresar email">  
+            <div class="main__contacto--formularioAcomodo">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" placeholder="Ingresar email" class="form-control">  
             </div>
-            <div>
-                <label for="telefono">Numero de Telefono</label>
-                <input type="tel" name="telefono" placeholder="Ingresar numero de telefono">
+            <div class="main__contacto--formularioAcomodo">
+                <label for="telefono" class="form-label">Numero de Telefono</label>
+                <input type="tel" name="telefono" placeholder="Ingresar numero de telefono" class="form-control">
             </div>
-            <div>
-                <h4>Dejanos su mensaje</h4>
+            <div class="main__contacto--formularioAcomodo">
+                <h5>Dejanos su mensaje</h5>
                 <textarea name="comentario" id="" cols="30" rows="10"></textarea>
             </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>                        <div>
-                <input type="reset" value="Borrar Formulario">
-            </div>
+            <div class="main__contacto--formularioAcomodo--Botones">
+                <input class="btn btn-dark" type="submit" value="Enviar">
+                <input class="btn btn-dark" type="reset" value="Reset">
+            </div>            
+
         </form>
     </main>
 
     <footer class="footer__principal">
         <div class="footer__principal--izquierda">
-            <p>Abierto de Lunes a Jueves: 11hs a 14hs y 19hs a 23hs</p>
+            <p>Lunes a Jueves: 11hs a 14hs - 19hs a 23hs</p>
             <p>Viernes a Domingos: 17hs a 01hs</p>
         </div>
         <div class="footer__principal--derecha">
             <p>Direccion: Alvear 752</p>
-            <p>Telefono:12312312321</p>
+            <p>Telefono:122312312321</p>
         </div>
     </footer>
-
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
+</html>

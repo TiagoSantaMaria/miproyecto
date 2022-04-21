@@ -1,0 +1,219 @@
+
+/* Pagina Carta */
+.main__carta--Fondo{
+    min-height: 100vh;
+    background: url('../attaches/images/FondoReserva/fondoCarta.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+.main__carta{
+    display: grid;
+    grid-template-rows: repeat(18, min-height);
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.main__carta--titulo{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 10px;
+    width: 55%;
+    margin-left: 20%;
+    background-color: wheat;
+}
+.main__carta--titulo h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.main__carta--nave{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: inline-block;
+    margin-top: 20px;
+    align-items: center;
+    height: 50px;
+    border: solid gray 0.5px;
+    background-color: wheat;
+}
+.main__carta--nave ul{
+    display: flex;
+    justify-content: space-around;
+    width: 77vw;
+    margin-top: 12px;
+
+}
+.main__carta--nave a {
+    padding:  10px 25px;
+    color: rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+.main__carta--nave a:hover {
+    background-color: rgb(168, 168, 168);
+    color: rgb(0, 0, 0);
+}
+.main__carta--platosMes--titulo{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.main__carta--platosMes{
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    margin-top: 10px;
+}
+.main__carta--platosMes div{
+    border: solid;
+    height: 500px;
+    width: 250px;
+    margin-top: 10px;
+    background-color: wheat;
+}
+.main__carta--platosMes img{
+    margin-top: 5px;
+    width: 220px;
+    height: 330px;
+    border: solid gray;
+}
+.main__carta--pastas--titulo{
+    color: rgb(0, 0, 0);
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.main__carta--pastas{
+    grid-column: 1/4;
+    grid-row: 6/7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    margin-top: 10px;
+}
+.main__carta--pastas div{
+    background-color: wheat;
+    border: solid;
+    height: 500px;
+    width: 250px;
+    margin-top: 10px;
+}
+.main__carta--pastas img{
+    margin-top: 5px;
+    width: 220px;
+    height: 330px;
+    border: solid gray;
+}
+.main__carta--pizzas--titulo{
+    color: rgb(0, 0, 0);
+    grid-row: 7/8;
+    grid-column: 2/3;
+}
+.main__carta--pizzas{
+    grid-column: 1/4;
+    grid-row: 8/9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    margin-top: 10px;
+}
+.main__carta--pizzas div{
+    background-color: wheat;
+    border: solid;
+    height: 500px;
+    width: 250px;
+    margin-top: 10px;
+
+}
+.main__carta--pizzas img{
+    margin-top: 5px;
+    width: 220px;
+    height: 330px;
+    border: solid gray;
+}
+.main__carta--hamburguesas--titulo{
+    color: rgb(0, 0, 0);
+    grid-row: 9/10;
+    grid-column: 2/3;
+}
+.main__carta--hamburguesas{
+    grid-column: 1/4;
+    grid-row: 10/11;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    margin-top: 10px;
+}
+.main__carta--hamburguesas div{
+    background-color: wheat;
+    border: solid;
+    height: 500px;
+    width: 250px;
+    margin-top: 10px;
+}
+.main__carta--hamburguesas img{
+    margin-top: 5px;
+    width: 220px;
+    height: 330px;
+    border: solid gray;
+}
+.main__carta--bebidas--titulo{
+    color: rgb(0, 0, 0);
+    grid-row: 11/12;
+    grid-column: 2/3;
+}
+.main__carta--bebidas{
+    grid-column: 1/4;
+    grid-row: 12/13;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 150px;
+    margin-top: 10px;
+}
+.main__carta--bebidas div{
+    background-color: wheat;
+    border: solid;
+    height: 500px;
+    width: 250px;
+    margin-top: 10px;
+
+}
+.main__carta--bebidas img{
+    margin-top: 5px;
+    width: 220px;
+    height: 330px;
+    border: solid gray;
+}
+/*-------------------*/
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 730px){
+    /* main Carta */
+    .main__carta--nave a {
+        padding:  10px 5px;
+    }
+}
+@media screen and (max-width: 480px){
+    /* Main Carta */
+    .main__carta--titulo{
+        width: 65%;
+        margin-left: 18%;
+    }
+    .main__carta--nave a{
+        font-size: small;
+        padding: 10px 3px;
+    }
+}

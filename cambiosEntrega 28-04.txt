@@ -1,0 +1,8 @@
+Primero que nada acomode los temas de SEO que me corrigio en la segunda entrega.
+Tambien cambie fotos que en el celular se veian mal por un tema de que estaban en horizontal.
+Depues con respecto a SASS, separe por paginas su contenido de estilos css y cree dos secciones mas,
+una para juntar todo y otra para definir variables globales para facilitarme cambiar distintos detalles
+en un futuro.
+Declare algunas variables para usarla durante el codigo, declare un mixin que use en la seccion de equipococina
+y use includes en la parte de la carta, tambien declare un mapa que use para la seccion de chef (probablemente saque el map).
+La declaracion de las cosas anteriores se pueden encontrar  en la seccion _variablesGlobales.

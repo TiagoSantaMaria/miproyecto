@@ -16,14 +16,15 @@
 .main__carta--titulo{
     grid-row: 1/2;
     grid-column: 2/3;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 55%;
     margin-left: 20%;
     background-color: wheat;
 }
 .main__carta--titulo h1{
-    font-size: 30px;
-    font-weight: normal;
+    font-size: 40px;
+    font-weight:450;
+    color: black;
 }
 .main__carta--nave{
     grid-row: 2/3;

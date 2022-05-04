@@ -1,4 +1,37 @@
-//import
+// // Variables
+$color-fondo-body:rgb(255, 255, 255);
+$colorFondoEquipoCocina:(
+    titulo:wheat,
+    imagenes:wheat
+);
+
+//Header
+$color-fondo-header: white;
+$color-borde-header: rgb(136, 136, 136);
+$color-hover: rgb(206, 197, 197);
+
+// FUNCIONES SASS
+
+// Mixin
+@mixin tamañoGenerales($width,$height,$marginTop){
+    width: $width;
+    height: $height;
+    margin-top: $marginTop;
+}
+// Extend
+.tamañoImagenes{
+    width: 200px;
+    height: 300px;
+    margin-top: 15px;
+}
+//Each
+@each $parte, $color in $colorFondoEquipoCocina{
+    .main__equipoCocina--#{$parte}{
+        background-color: $color;
+    }
+}
+
+//Imports
 @import "variablesglobales";
 @import "global";
 @import "header";

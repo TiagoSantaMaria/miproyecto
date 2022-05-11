@@ -19,12 +19,11 @@
     margin-top: 15px;
     width: 55%;
     margin-left: 20%;
-    background-color: wheat;
 }
 .main__carta--titulo h1{
     font-size: 40px;
     font-weight:450;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .main__carta--nave{
     grid-row: 2/3;
@@ -33,8 +32,7 @@
     margin-top: 20px;
     align-items: center;
     height: 50px;
-    border: solid gray 0.5px;
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.658);
 }
 .main__carta--nave ul{
     display: flex;
@@ -71,10 +69,10 @@
 }
 .main__carta--platosMes div{
     border: solid;
-    height: 500px;
+    height: 475px;
     width: 250px;
     margin-top: 10px;
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.651);
 }
 
 .main__carta--platosMes img{
@@ -97,9 +95,9 @@
     margin-top: 10px;
 }
 .main__carta--pastas div{
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.651);
     border: solid;
-    height: 500px;
+    height: 473px;
     width: 250px;
     margin-top: 10px;
 }
@@ -123,9 +121,9 @@
     margin-top: 10px;
 }
 .main__carta--pizzas div{
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.651);
     border: solid;
-    height: 500px;
+    height: 473px;
     width: 250px;
     margin-top: 10px;
 
@@ -150,9 +148,9 @@
     margin-top: 10px;
 }
 .main__carta--hamburguesas div{
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.651);
     border: solid;
-    height: 500px;
+    height: 473px;
     width: 250px;
     margin-top: 10px;
 }
@@ -176,9 +174,9 @@
     margin-top: 10px;
 }
 .main__carta--bebidas div{
-    background-color: wheat;
+    background-color: rgba(255, 255, 255, 0.651);
     border: solid;
-    height: 500px;
+    height: 449px;
     width: 250px;
     margin-top: 10px;
 
@@ -186,6 +184,10 @@
 .main__carta--bebidas img{
     @extend .tamañoImagenes;
     border: solid gray;
+}
+.main__carta--precio{
+    background-color: rgba(0, 0, 0, 0.253);
+    height: 25px;
 }
 /*-------------------*/
 
@@ -195,6 +197,10 @@
     /* main Carta */
     .main__carta--nave a {
         padding:  10px 5px;
+    }
+    .main__carta--precio{
+        background-color: rgba(0, 0, 0, 0.253);
+        height: 28px;
     }
 }
 @media screen and (max-width: 480px){

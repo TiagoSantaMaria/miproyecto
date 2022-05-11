@@ -61,29 +61,38 @@
         <div class="main__contacto--titulo">
             <h1>Contactanos</h1>
         </div>
-
-        <form action="procesar.php" method="post" class="main__contacto--formularioAcomodo container">
-            <div>
-                <label for="nombre" class="form-label">Nombre y Apellido</label>
-                <input type="text" name="nombre" placeholder="Ingresar nombre y apellido" class="form-control">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-1 col-1">
+                </div>
+                <div class="col-lg-6 col-sm-10 col-10">
+                    <form action="procesar.php" method="post" class="main__contacto--formularioAcomodo">
+                        <div>
+                            <label for="nombre" class="form-label">Nombre y Apellido</label>
+                            <input type="text" name="nombre" placeholder="Ingresar nombre y apellido" class="form-control">
+                        </div>
+                        <div class="main__contacto--formularioAcomodo">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" name="email" placeholder="Ingresar email" class="form-control">  
+                        </div>
+                        <div class="main__contacto--formularioAcomodo">
+                            <label for="telefono" class="form-label">Numero de Telefono</label>
+                            <input type="tel" name="telefono" placeholder="Ingresar numero de telefono" class="form-control">
+                        </div>
+                        <div class="main__contacto--formularioAcomodo">
+                            <p>Dejanos su mensaje</p>
+                            <textarea name="comentario" id="" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+                        <div class="main__contacto--formularioAcomodo--Botones">
+                            <input class="btn btn-dark" type="submit" value="Enviar">
+                            <input class="btn btn-dark" type="reset" value="Borrar Datos">
+                        </div>    
+                    </form>
+                </div>
+                <div class="col-lg-3 col-sm-1 col-1">
+                </div>
             </div>
-            <div class="main__contacto--formularioAcomodo">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" placeholder="Ingresar email" class="form-control">  
-            </div>
-            <div class="main__contacto--formularioAcomodo">
-                <label for="telefono" class="form-label">Numero de Telefono</label>
-                <input type="tel" name="telefono" placeholder="Ingresar numero de telefono" class="form-control">
-            </div>
-            <div class="main__contacto--formularioAcomodo">
-                <p>Dejanos su mensaje</p>
-                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="main__contacto--formularioAcomodo--Botones">
-                <input class="btn btn-dark" type="submit" value="Enviar">
-                <input class="btn btn-dark" type="reset" value="Reset">
-            </div>            
-        </form>
+        </div>
     </main>
 
     <footer class="footer__principal">

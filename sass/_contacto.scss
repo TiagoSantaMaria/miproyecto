@@ -26,9 +26,6 @@
     width: 100%;
     padding: 5px;
 }
-.main__contacto--formularioAcomodo input:focus, textarea:focus{
-    border: solid 4px rgb(0, 0, 0);
-}
 .main__contacto--formularioAcomodo textarea{
     resize: vertical;
     max-height: 250px;
@@ -39,11 +36,13 @@
     display: inline-flex;
     flex-direction: row;
     margin-bottom: 50px;
+    padding: 10px 20px;
 }
 .main__contacto--formularioAcomodo--Botones input:hover{
     background-color: aqua;
     cursor: pointer;
 }
+
 /*--------------------------------------- */
 /*MEDIA QUERIES*/
 @media screen and (max-width: 625px){

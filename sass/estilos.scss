@@ -1,8 +1,7 @@
 // // Variables
 $color-fondo-body:rgb(255, 255, 255);
 $colorFondoEquipoCocina:(
-    titulo:wheat,
-    imagenes:wheat
+    imagenes:rgba(245, 222, 179, 0.829)
 );
 
 //Header
@@ -32,7 +31,6 @@ $color-hover: rgb(206, 197, 197);
 }
 
 //Imports
-@import "variablesglobales";
 @import "global";
 @import "header";
 @import "footer";

@@ -5,26 +5,8 @@
   margin-top: 15px;
 }
 
-.main__equipoCocina--titulo {
-  background-color: wheat;
-}
-
 .main__equipoCocina--imagenes {
-  background-color: wheat;
-}
-
-.tamañoImagenes, .main__carta--bebidas img, .main__carta--hamburguesas img, .main__carta--pizzas img, .main__carta--pastas img, .main__carta--platosMes img {
-  width: 200px;
-  height: 300px;
-  margin-top: 15px;
-}
-
-.main__equipoCocina--titulo {
-  background-color: wheat;
-}
-
-.main__equipoCocina--imagenes {
-  background-color: wheat;
+  background-color: rgba(245, 222, 179, 0.829);
 }
 
 /* GLOBAL */
@@ -481,13 +463,12 @@ body {
   margin-top: 15px;
   width: 55%;
   margin-left: 20%;
-  background-color: wheat;
 }
 
 .main__carta--titulo h1 {
   font-size: 40px;
   font-weight: 450;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .main__carta--nave {
@@ -497,8 +478,7 @@ body {
   margin-top: 20px;
   align-items: center;
   height: 50px;
-  border: solid gray 0.5px;
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.658);
 }
 
 .main__carta--nave ul {
@@ -540,10 +520,10 @@ body {
 
 .main__carta--platosMes div {
   border: solid;
-  height: 500px;
+  height: 475px;
   width: 250px;
   margin-top: 10px;
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.651);
 }
 
 .main__carta--platosMes img {
@@ -568,9 +548,9 @@ body {
 }
 
 .main__carta--pastas div {
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.651);
   border: solid;
-  height: 500px;
+  height: 473px;
   width: 250px;
   margin-top: 10px;
 }
@@ -597,9 +577,9 @@ body {
 }
 
 .main__carta--pizzas div {
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.651);
   border: solid;
-  height: 500px;
+  height: 473px;
   width: 250px;
   margin-top: 10px;
 }
@@ -626,9 +606,9 @@ body {
 }
 
 .main__carta--hamburguesas div {
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.651);
   border: solid;
-  height: 500px;
+  height: 473px;
   width: 250px;
   margin-top: 10px;
 }
@@ -655,9 +635,9 @@ body {
 }
 
 .main__carta--bebidas div {
-  background-color: wheat;
+  background-color: rgba(255, 255, 255, 0.651);
   border: solid;
-  height: 500px;
+  height: 449px;
   width: 250px;
   margin-top: 10px;
 }
@@ -666,12 +646,22 @@ body {
   border: solid gray;
 }
 
+.main__carta--precio {
+  background-color: rgba(0, 0, 0, 0.253);
+  height: 25px;
+}
+
 /*-------------------*/
 /* MEDIA QUERIES*/
 @media screen and (max-width: 730px) {
   /* main Carta */
   .main__carta--nave a {
     padding: 10px 5px;
+  }
+
+  .main__carta--precio {
+    background-color: rgba(0, 0, 0, 0.253);
+    height: 28px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -703,14 +693,13 @@ body {
 
 .main__equipoCocina--titulo {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 40%;
-  color: rgb(0, 0, 0);
 }
 
 .main__equipoCocina--titulo h1 {
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 450;
 }
 
 .main__equipoCocina--conjuntoimagenes {
@@ -746,8 +735,7 @@ body {
   /* main Chefs */
   .main__equipoCocina--titulo {
     text-align: center;
-    border: solid 2px black;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 50%;
     color: rgb(0, 0, 0);
   }
@@ -807,10 +795,6 @@ body {
   padding: 5px;
 }
 
-.main__contacto--formularioAcomodo input:focus, textarea:focus {
-  border: solid 4px rgb(0, 0, 0);
-}
-
 .main__contacto--formularioAcomodo textarea {
   resize: vertical;
   max-height: 250px;
@@ -822,6 +806,7 @@ body {
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 50px;
+  padding: 10px 20px;
 }
 
 .main__contacto--formularioAcomodo--Botones input:hover {
@@ -887,12 +872,13 @@ body {
 }
 
 .main__reserva--formularioAcomodo p, label {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .main__reserva--formularioAcomodo .btn {
-  background-color: white;
+  background-color: rgba(156, 156, 156, 0.651);
   margin-bottom: 20px;
+  padding: 8px 40px;
 }
 
 /* --------------------------------------------- */

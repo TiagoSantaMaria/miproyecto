@@ -1,5 +1,0 @@
-Con respecto a Seo: lo que hice fue acomodar lo que me corrigio en la segunda entrega, lo que eran con respecto a las etiquetas h1,h2, etc...
-Tambien Agrege en cada hoja html de mi proyecto dos etiquetas Meta, una para la description y otra para las keywords, el contenido de las mismas
-difiere en cada hoja del proyecto, y se asemeja a lo que se esta tratando en cada pagina en particular. En cuanto a lo que decidi escribir fue
-despues de haber buscado en paginas distintas de Restaurantes sus keywords y sus description, asi poder formalizar mis etiquetas con sus respectivo
-contenido.

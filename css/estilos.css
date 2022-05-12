@@ -664,6 +664,47 @@ body {
     height: 28px;
   }
 }
+@media screen and (max-width: 410px) {
+  .main__carta--platosMes div {
+    border: solid;
+    height: 468px;
+    width: 250px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.651);
+  }
+
+  .main__carta--pastas div {
+    background-color: rgba(255, 255, 255, 0.651);
+    border: solid;
+    height: 468px;
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .main__carta--pizzas div {
+    background-color: rgba(255, 255, 255, 0.651);
+    border: solid;
+    height: 468px;
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .main__carta--hamburguesas div {
+    background-color: rgba(255, 255, 255, 0.651);
+    border: solid;
+    height: 468px;
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .main__carta--bebidas div {
+    background-color: rgba(255, 255, 255, 0.651);
+    border: solid;
+    height: 444px;
+    width: 250px;
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 480px) {
   /* Main Carta */
   .main__carta--titulo {
